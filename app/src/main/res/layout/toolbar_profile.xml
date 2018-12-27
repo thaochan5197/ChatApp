@@ -1,0 +1,22 @@
+<android.support.v7.widget.Toolbar android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#33adff"
+    android:id="@+id/toolbarProfile">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <com.mikepenz.iconics.view.IconicsTextView
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="{faw-arrow-left}"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_15sdp">
+        </com.mikepenz.iconics.view.IconicsTextView>
+    </LinearLayout>
+
+
+</android.support.v7.widget.Toolbar>

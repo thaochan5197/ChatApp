@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background_profile"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_profile" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:src="@drawable/background"
+            app:civ_border_color="#ffffff"
+            app:civ_border_width="@dimen/_2sdp" />
+
+        <com.mikepenz.iconics.view.IconicsTextView
+            android:id="@+id/editImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_7sdp"
+            android:text="{faw-camera} Edit Picture"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_12sdp">
+
+        </com.mikepenz.iconics.view.IconicsTextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#F4F4F4"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_35sdp"
+                android:layout_marginRight="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/edit_text"
+                android:inputType="textPersonName"
+                android:paddingLeft="@dimen/_15sdp"
+                android:textColor="#0096ff"
+                android:textColorHint="#CCCCCC"
+                android:textSize="@dimen/_11sdp"
+                android:gravity="center_vertical"
+                android:enabled="false"/>
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_35sdp"
+                android:layout_marginRight="@dimen/_35sdp"
+                android:background="@drawable/edit_text"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:paddingLeft="@dimen/_15sdp"
+                android:textColor="#0096ff"
+                android:textColorHint="#CCCCCC"
+                android:textSize="@dimen/_11sdp"
+                android:enabled="false"/>
+
+            <EditText
+                android:id="@+id/oldPassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_35sdp"
+                android:layout_marginRight="@dimen/_35sdp"
+                android:background="@drawable/edit_text"
+                android:text="••••••••"
+                android:hint="Current password"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/_15sdp"
+                android:textColor="#0096ff"
+                android:textColorHint="#CCCCCC"
+                android:textSize="@dimen/_11sdp"
+                android:enabled="false"/>
+
+            <EditText
+                android:id="@+id/newPassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_35sdp"
+                android:layout_marginRight="@dimen/_35sdp"
+                android:background="@drawable/edit_text"
+                android:hint="New password"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/_15sdp"
+                android:textColor="#0096ff"
+                android:textColorHint="#CCCCCC"
+                android:textSize="@dimen/_11sdp"
+                android:visibility="invisible"/>
+            <EditText
+                android:id="@+id/rePassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_35sdp"
+                android:layout_marginRight="@dimen/_35sdp"
+                android:background="@drawable/edit_text"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/_15sdp"
+                android:textColor="#0096ff"
+                android:textColorHint="#CCCCCC"
+                android:textSize="@dimen/_11sdp"
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_35sdp"
+                android:layout_marginRight="@dimen/_35sdp"
+                android:background="@drawable/border_button"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold"
+                android:visibility="invisible"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.mikepenz.iconics.view.IconicsTextView
+        android:id="@+id/changeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="{faw-pencil}"
+        android:layout_marginLeft="@dimen/_245sdp"
+        android:layout_marginTop="@dimen/_265sdp"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="#0096ff"
+        ></com.mikepenz.iconics.view.IconicsTextView>
+    <com.mikepenz.iconics.view.IconicsTextView
+        android:id="@+id/changePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="{faw-pencil}"
+        android:layout_marginLeft="@dimen/_245sdp"
+        android:layout_marginTop="@dimen/_305sdp"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="#0096ff"
+        ></com.mikepenz.iconics.view.IconicsTextView>
+
+
+</RelativeLayout>

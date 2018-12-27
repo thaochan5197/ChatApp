@@ -1,0 +1,43 @@
+<android.support.v7.widget.Toolbar android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#33adff"
+    android:id="@+id/toolbar">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <com.mikepenz.iconics.view.IconicsTextView
+            android:id="@+id/editProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="{faw-id-card}"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_16sdp"
+            android:layout_weight="1">
+        </com.mikepenz.iconics.view.IconicsTextView>
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"
+            android:hint="Search"
+            android:paddingLeft="@dimen/_10sdp"
+            android:background="@drawable/sign_up"
+            android:layout_weight="0.3"
+            android:textColor="#33adff"/>
+        <com.mikepenz.iconics.view.IconicsTextView
+            android:id="@+id/signOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="{faw-sign-out}"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_17sdp"
+            android:layout_weight="1"
+            android:textAlignment="viewEnd"
+            android:layout_gravity="end|center"
+            android:layout_marginRight="@dimen/_6sdp"/>
+    </LinearLayout>
+
+
+</android.support.v7.widget.Toolbar>

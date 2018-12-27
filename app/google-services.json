@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "723217892314",
+    "firebase_url": "https://chatapp-ed518.firebaseio.com",
+    "project_id": "chatapp-ed518",
+    "storage_bucket": "chatapp-ed518.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723217892314:android:ed6d640aca60f39e",
+        "android_client_info": {
+          "package_name": "com.hihi.mybad.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723217892314-suc7bejiqjikbfccgli3v0e2rh2j5bul.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8mPX2ySsLCjBZUPb9D4TntOJC9FJ2Jzc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

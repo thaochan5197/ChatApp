@@ -1,0 +1,50 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff">
+    <include layout="@layout/toolbar_chat"
+        android:id="@+id/include"></include>
+    <ListView
+        android:id="@+id/listViewMessage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_400sdp"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        android:smoothScrollbar="true"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include" />
+    <LinearLayout
+        android:id="@+id/aa"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/newMessage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColor="#303030"
+            android:textSize="@dimen/_10sdp" />
+
+        <com.mikepenz.iconics.view.IconicsTextView
+            android:id="@+id/send"
+            android:text="{gmi-mail-send}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_25sdp"
+            android:layout_weight="11"
+            android:layout_gravity="center"
+            android:textColor="#33adff" />
+    </LinearLayout>
+
+</RelativeLayout>

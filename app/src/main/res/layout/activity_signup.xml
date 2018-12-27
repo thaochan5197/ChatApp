@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="CREATE NEW ACCOUNT"
+        android:textAlignment="center"
+        android:textSize="@dimen/_18sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_350sdp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_90sdp"
+        android:background="@drawable/sign_up">
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            android:textSize="@dimen/_11sdp"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_100sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_15sdp"
+            android:background="@drawable/edit_text"
+            android:textColor="#0096ff"
+            android:textColorHint="#CCCCCC"/>
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:paddingLeft="@dimen/_15sdp"
+            android:textSize="@dimen/_11sdp"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/edit_text"
+            android:textColor="#0096ff"
+            android:textColorHint="#CCCCCC"/>
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/_15sdp"
+            android:textSize="@dimen/_11sdp"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/edit_text"
+            android:textColor="#0096ff"
+            android:textColorHint="#CCCCCC"/>
+        <EditText
+            android:id="@+id/editTextRePassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:hint="Confirm password"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/_15sdp"
+            android:textSize="@dimen/_11sdp"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/edit_text"
+            android:textColor="#0096ff"
+            android:textColorHint="#CCCCCC"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:id="@+id/btnSignup"
+            android:background="@drawable/border_button"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:text="Sign Up"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_11sdp"/>
+    </LinearLayout>
+    <com.mikepenz.iconics.view.IconicsTextView
+        android:layout_width="@dimen/_67sdp"
+        android:layout_height="@dimen/_67sdp"
+        android:text="{faw-user-circle}"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:textSize="@dimen/_67sdp"
+        android:textColor="#33adff"/>
+
+
+</RelativeLayout>
